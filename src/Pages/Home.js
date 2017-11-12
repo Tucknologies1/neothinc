@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { Container, Button } from 'semantic-ui-react';
 import Particles from 'react-particles-js';
+import { Card, Divider } from 'semantic-ui-react';
+
+import ServiceCard from './ServiceCard';
+import OurPartners from './OurPartners';
+import Footer from './Components/Footer';
 
 class Home extends React.Component {
     render() {
@@ -131,18 +136,37 @@ class Home extends React.Component {
                         />
                     </div>
                 </div>
-                <div className="blogBox">
+                {/* <div className="blogBox">
                     Insert Blog Information Component here
                     <Button className="blogBoxBtn">
                         Blog Updates
                     </Button>
-                </div>
-                <div className="homeContainerTwo">
-                    <Container className="homeTwoTitle">
+                </div> */}
+            <div className="homeContainerTwo">
+                <div className="leftServiceContainer">
+                    <div className = "homeTwoTitle">
                         <h1>OUR</h1>
                         <h2>SERVICES</h2>
-                    </Container>
+                        <div className = "servicesDesc">
+                            <p>WE HAVE THE BEST SHIT HERE </p>
+                        </div>
+                        <Button className = "servicesBtn">
+                            Get Started
+                        </Button>
+                    </div>
                 </div>
+                <div className="rightServiceContainer">
+                    {/* TODO: Cards go here */}
+                    <ServiceCard />
+                </div>
+            </div>
+                <div className="homeContainerThree">
+                    <div className="partnerTitle">
+                        <h1>OUR PARTNERS</h1>
+                    </div>
+                    <OurPartners />
+                </div>
+                <Footer />
             </div>
         );
     }

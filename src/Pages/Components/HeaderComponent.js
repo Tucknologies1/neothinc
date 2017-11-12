@@ -19,7 +19,7 @@ render() {
                         <NavLink to="/contact-us">Contact</NavLink>
                     </div>
                 </div>
-        </Header>
+            </Header>
         </div>
         );
     }
