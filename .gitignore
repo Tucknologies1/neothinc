@@ -78,7 +78,6 @@ typings/
 # Yarn lock file
 yarn.lock
 
-semantic.json
 
 # dotenv environment variables file
 .env
