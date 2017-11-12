@@ -4,12 +4,16 @@
   "private": true,
   "dependencies": {
     "@types/react": "^16.0.22",
+    "gulp": "^3.9.1",
     "hover.css": "^2.2.1",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
+    "react-native-typewriter": "^0.5.3",
     "react-particles-js": "^2.1.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
+    "react-typewriter": "^0.4.1",
+    "react-typist": "^2.0.4",
     "semantic-ui": "^2.2.13",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.76.0"
