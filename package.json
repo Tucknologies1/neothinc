@@ -1,23 +1,17 @@
 {
-  "name": "neothinc",
-  "version": "0.1.0",
+  "name": "neothinc-root",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@types/react": "^16.0.22",
-    "hover.css": "^2.2.1",
-    "react": "^16.1.0",
-    "react-dom": "^16.1.0",
-    "react-particles-js": "^2.1.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
-    "semantic-ui": "^2.2.13",
-    "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.76.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+
 }
