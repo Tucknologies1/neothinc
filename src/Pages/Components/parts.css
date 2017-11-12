@@ -1,23 +1,18 @@
 .Head-Icon {
   height: 80px;
-  margin: 80px 0;
+  margin: 30px 0;
 }
 
 .Gear-Icon {
   position: absolute;
   height: 45px;
-  top: 210px;
+  top: 300px;
   left: 50%;
   animation: Icon-spin infinite 10s linear;
 }
 
-.Gear-Icon:hover {
-  animation: Icon-spin infinite 2s linear;
-}
-
 .Icon-Header {
-  background-color: #F4D37D;
-  height: 300px;
+  height: 120px;
   color: white;
   text-align: center;
 }
@@ -29,3 +24,20 @@
 
 
 /* END ICON STYLING */
+
+.getStartedButton {
+  top: 80px;
+}
+
+.Type-Header {
+  font-size: 30px;
+}
+
+.Cursor {
+  animation: Blink 1s infinite alternate;
+}
+
+@keyframes Blink {
+  from {color: black;}
+  to {color: white;}
+}
