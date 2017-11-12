@@ -1,27 +1,29 @@
-import React from 'react'
-import { Card } from 'semantic-ui-react'
+import React, {Component} from 'react'
 
-const items = [
-  {
-    header: 'Web Development',
-    description: 'Leverage agile frameworks to provide a robust synopsis for high level overviews.',
-  },
-  {
-    header: 'Mobile Development',
-    description: 'Bring to the table win-win survival strategies to ensure proactive domination.',
-  },
-  {
-    header: 'Web Design',
-    description: 'Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.',
-  },
-  {
-    header: 'Custom Software',
-    description: 'Look at this software',
-  },
-]
+class ServiceCard extends React.Component {
+  render() {
+    return(
+      <div class="serviceContainer">
+        <div class="serviceCard">
+          <h1>Mobile Development</h1>
+          <h3>We like to do mobile development</h3>
+          <h3>We like to do mobile development</h3>
+        </div>
 
-const ServiceCard = () => (
-  <Card.Group items={items} />
-)
+        <div class="serviceCard">
+          <h1>Web Development</h1>
+          <h3>We like to do Web development</h3>
+          <h3>We like to do Web development</h3>
+        </div>
+
+        <div class="serviceCard">
+          <h1>Custom Software</h1>
+          <h3>We like to do Custom development</h3>
+          <h3>We like to do Custom development</h3>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default ServiceCard
