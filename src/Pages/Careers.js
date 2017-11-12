@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import {List, Tab, Label} from 'semantic-ui-react'
+import {List, Tab, Label} from 'semantic-ui-react';
+import JobsComponent from './Components/JobsComponent';
 
 const panes = [
     {
         menuItem: 'Job Openings',
         pane: {
             key: 'jobs',
-            content: 'Current Job Openings'
+            content: <Tab.Pane attached={false}><JobsComponent /></Tab.Pane>
         }
     },
     {
         menuItem: 'Internships',
         pane: {
             key: 'Internships Opportunities',
-            content: 'Internship Program'
+            content: <Tab.Pane attached={false}>Internship Opportunities</Tab.Pane>
         }
     }
 ];
@@ -22,7 +23,7 @@ class Careers extends React.Component {
     render() {
         return(
             <div>
-                <Tab panes={panes} renderActiveOnly={false}/>
+                <Tab panes={panes} menu={{secondary: true, pointing: true}} renderActiveOnly={false}/>
             </div>
         );
     }

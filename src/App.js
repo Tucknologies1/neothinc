@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home';
@@ -10,7 +10,7 @@ import ContactUs from './Pages/ContactUs';
 import Careers from './Pages/Careers';
 import HeaderComponent from './Pages/Components/HeaderComponent';
 
-import {Header} from 'semantic-ui-react';
+import { Header } from 'semantic-ui-react';
 
 import {
     Route,
