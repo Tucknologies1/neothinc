@@ -26,12 +26,18 @@
 
 /* END ICON STYLING */
 
-.getStartedButton {
-  top: 80px;
+.Header-Container {
+  height: 100%;
+  width: 100%;
+}
+
+.Header-Content {
+  margin-top: 45vh;
 }
 
 .Type-Header {
   font-size: 30px;
+  margin-top: 50vh;
 }
 
 .Typed-Word {
@@ -42,7 +48,24 @@
   animation: Blink 1s infinite alternate;
 }
 
+.getStartedButton {
+  top: 80px;
+}
+
 @keyframes Blink {
   from {color: black;}
   to {color: white;}
 }
+
+/* Style for particles */
+.particles {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.particles canvas {
+  width, height: 100% !important;
+}
+
+/* END HEADER STYLING */
