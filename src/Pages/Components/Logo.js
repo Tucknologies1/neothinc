@@ -3,9 +3,7 @@ import head from './head.svg';
 import gear from './gear.svg';
 import './parts.css';
 
-require('./js/Typewriter.js');
-
-class HeaderImage extends React.Component {
+class Logo extends React.Component {
 
     render() {
         return(
@@ -20,4 +18,4 @@ class HeaderImage extends React.Component {
     }
 }
 
-export default HeaderImage
+export default Logo

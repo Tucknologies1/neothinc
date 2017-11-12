@@ -1,15 +1,37 @@
 import React, { Component } from "react";
 import { Container, Button } from 'semantic-ui-react';
 import Particles from 'react-particles-js';
+import Typist from 'react-typist';
+import Logo from './Components/Logo.js';
+import './Components/parts.css';
 
 class Home extends React.Component {
+    state = {
+      typing: true,
+    }
+    done = () => {
+      this.setState({ typing: false }, () => {
+        this.setState({ typing: true })
+      });
+    }
     render() {
         return(
             <div>
                 <div className="homeContainer">
                     <Container textAlign='center'>
-                    <h1>THiNC TECHNOLOGY</h1>
-                    <h2>WEB MOBILE SOFTWARE</h2>
+                    <Logo />
+                    <h1 className="Thinc-Header">THiNC TECHNOLOGY</h1>
+                    <span className="Type-Header">
+                    {this.state.typing
+                      ? <Typist onTypingDone={this.done}>
+                      <span className="Typed-Word">WEB</span>
+                      <Typist.Backspace count={3} delay={1000} />
+                      <span className="Typed-Word">MOBILE</span>
+                      <Typist.Backspace count={6} delay={1500} />
+                      <span className="Typed-Word">SOFTWARE</span>
+                      <Typist.Backspace count={8} delay={2000} />
+                    </Typist> : '' }
+                    </span>
                     <Button className="getStartedButton">
                         Get Started
                     </Button>
