@@ -6,7 +6,7 @@
     align-items: center;
 }
 .headerContainer .title {
-    margin: 1em;
+    margin: 0.2em;
 }
 .links {
     display: flex;
@@ -25,9 +25,11 @@
 }
 /* Home CSS */
 .homeContainer {
-    height: 900px;
+    height: 700px;
     width: 100%;
-    background-color: #F4D37D;
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,5 +52,60 @@
 }
 .ui.button.getStartedButton {
     background: white;
+    position: relative;
+    z-index: 9999;
     margin: 1rem;
 }
+/* Style for Blog Box */
+.blogBox {
+    position: absolute;
+    z-index: 2;
+    height: 90px;
+    width: 800px;
+    left: 25%;
+    top: 740px;
+    background:white;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18);
+}
+.blogBoxBtn {
+    position: relative;
+    right: 5%;
+    z-index: 3;
+    top: 50%;
+    float:right;
+    transform: translateY(-50%);
+}
+.ui.button.blogBoxBtn {
+    background-color: #348AC7;
+    color: #ffffff;
+}
+/* ================== */
+
+/* Home Container Two */
+.homeContainerTwo {
+    background: #ffffff;
+    height: 800px;
+    padding: 10%;
+}
+.homeTwoTitle {
+    font-family: 'Cairo', sans-serif;
+}
+.homeTwoTitle h1 {
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 0.5em;
+}
+.homeTwoTitle h2 {
+    font-weight: bolder;
+    font-size: 3em;
+}
+/* ================== */
+
+/* Style for particles */
+.particles {
+    position: absolute;
+    width: 100%;
+}
+/* =================== */

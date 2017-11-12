@@ -9,7 +9,7 @@ import Services from './Pages/Services';
 import ContactUs from './Pages/ContactUs';
 
 import { Header } from 'semantic-ui-react';
-
+import HeaderComponent from './Pages/Components/HeaderComponent';
 import {
   Route,
   NavLink,
@@ -20,6 +20,7 @@ class App extends Component {
     return (
         <HashRouter>
           <div>
+            <HeaderComponent />
             <div className="contentContainer">
               <Route exact path="/" component={Home}/>
               <Route path="/about-us" component={AboutUs}/>
