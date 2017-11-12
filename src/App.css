@@ -6,7 +6,25 @@
     display: inline;
     float: right;
 }
-.title {
-    padding: 30px;
-}
 /* Home CSS */
+.homeContainer {
+    height: 900px;
+    width: 100%;
+    background-color: #F4D37D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeContainer h1 {
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.homeContainer h2 {
+    font-family: 'Cairo', sans-serif;
+    color:white;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
