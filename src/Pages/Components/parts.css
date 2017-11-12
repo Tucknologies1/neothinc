@@ -1,13 +1,14 @@
 .Head-Icon {
-  height: 80px;
-  margin: 30px 0;
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  height: 25%;
 }
 
 .Gear-Icon {
   position: absolute;
-  height: 45px;
-  top: 300px;
-  left: 50%;
+  height: 30vh;
+  top: 40vh;
   animation: Icon-spin infinite 10s linear;
 }
 
@@ -31,6 +32,10 @@
 
 .Type-Header {
   font-size: 30px;
+}
+
+.Typed-Word {
+  color: black;
 }
 
 .Cursor {
