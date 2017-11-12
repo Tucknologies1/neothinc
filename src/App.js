@@ -20,19 +20,6 @@ class App extends Component {
     return (
         <HashRouter>
           <div>
-              <Header size="huge" className="header">
-              <div className="title">
-                Thinc Technology
-              </div>
-              <div className="headerLinks">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about-us">About Us</NavLink>
-                <NavLink to="/portfolio">Portfolio</NavLink>
-                <NavLink to="/FAQ">FAQ</NavLink>
-                <NavLink to="/services">Services</NavLink>
-                <NavLink to="/contact-us">Contact</NavLink>
-              </div>
-              </Header>
             <div className="contentContainer">
               <Route exact path="/" component={Home}/>
               <Route path="/about-us" component={AboutUs}/>
