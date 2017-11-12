@@ -29,9 +29,10 @@
 .homeContainer {
     height: 700px;
     width: 100%;
-    background: #7474BF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ffb347;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +136,7 @@
 }
 .ui.button.servicesBtn {
     color: white;
-    background-color: #348AC7;
+    background-color: #ffcc33;
 }
 /* ================== */
 
@@ -145,28 +146,27 @@
 }
 /* Partner CSS */
 .partnerContainer {
-    height: 300px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
     text-align: center;
 }
 .partnerCard {
-    width: 100px;
-    height: 100px;
-    margin-top: 5em;
-    margin-right: 4em;
-    margin-left: 4em;
-    background: black;
-}
-.partnerTitle{
-    font-family: 'Cairo', sans-serif;
-    font-size: 3em;
-    width: 100%;
+    width: 150px;
+    margin: 1.5em;
+    line-height: 1em;
     text-align: center;
 }
-.partners {
+.partnerTitle h1 {
+    font-size: 3em;
     width: 100%;
-    height: 1000px;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
 }
 
 /* Style for particles */
@@ -182,7 +182,7 @@
     display: flex;
     height: 130px;
     align-items: center;
-    background: #348AC7;
+    background: #ffcc33;
     color: white;
 }
 .footerContainer h1 {
@@ -193,3 +193,13 @@
 }
 
 /* ============== */
+/* Horizontal Line Style */
+.line {
+    margin-top: 3px;
+    border: 2px solid #ffcc33;
+    width: 1.5em;
+}
+#schultz {
+    width: 200px;
+    font-size: 1em;
+}

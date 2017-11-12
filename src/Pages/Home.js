@@ -162,7 +162,7 @@ class Home extends React.Component {
             </div>
                 <div className="homeContainerThree">
                     <div className="partnerTitle">
-                        <h1>OUR PARTNERS</h1>
+                        <h1>OUR CLIENTS</h1>
                     </div>
                     <OurPartners />
                 </div>
