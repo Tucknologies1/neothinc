@@ -78,6 +78,9 @@ typings/
 # Yarn lock file
 yarn.lock
 
+# Semantic UI source
+src/semantic
+
 
 # dotenv environment variables file
 .env
