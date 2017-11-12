@@ -11,10 +11,6 @@
   animation: Icon-spin infinite 10s linear;
 }
 
-.Gear-Icon:hover {
-  animation: Icon-spin infinite 2s linear;
-}
-
 .Icon-Header {
   height: 120px;
   color: white;
