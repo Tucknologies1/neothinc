@@ -5,7 +5,6 @@ class Home extends React.Component {
     render() {
         return(
             <div>
-                <HeaderComponent />
                 <div className="homeContainer">
                     <Container textAlign='center'>
                     <h1>THiNC TECHNOLOGY</h1>
