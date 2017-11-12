@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Button } from 'semantic-ui-react';
 import HeaderComponent from '../Pages/Components/HeaderComponent';
+import HeaderImage from './Components/HeaderImage';
 class Home extends React.Component {
     render() {
         return(
