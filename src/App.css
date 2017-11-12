@@ -17,6 +17,8 @@
     margin-left: 1em;
     margin-right: 1em;
     font-size: 0.5em;
+    position: relative;
+    z-index: 100;
     color: black;
 }
 
@@ -27,9 +29,10 @@
 .homeContainer {
     height: 700px;
     width: 100%;
-    background: #7474BF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ffb347;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +65,7 @@
     z-index: 2;
     height: 90px;
     width: 800px;
-    left: 25%;
+    left: 30%;
     top: 740px;
     background:white;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18);
@@ -83,25 +86,88 @@
 }
 /* ================== */
 
-/* Home Container Two */
+/* Home Container Two || Our Services */
 .homeContainerTwo {
     background: #ffffff;
     height: 800px;
-    padding: 10%;
+    display: flex;
 }
 .homeTwoTitle {
     font-family: 'Cairo', sans-serif;
 }
-.homeTwoTitle h1 {
+.leftServiceContainer {
+    flex:0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftServiceContainer h1 {
     font-weight: normal;
-    font-size: 3em;
+    font-size: 4em;
     line-height: 0.5em;
 }
-.homeTwoTitle h2 {
+.leftServiceContainer h2 {
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 4em;
+}
+.rightServiceContainer{
+    flex:.75;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rightServiceContainer .ui.cards .ui.card {
+    margin: 2em;
+}
+.servicesDesc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+}
+.serviceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5%;
+}
+.serviceCard {
+    margin: 2em;
+}
+.ui.button.servicesBtn {
+    color: white;
+    background-color: #ffcc33;
 }
 /* ================== */
+
+.homeContainerThree {
+    background: #ffffff;
+    height: 500px;
+}
+/* Partner CSS */
+.partnerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.partnerCard {
+    width: 150px;
+    margin: 1.5em;
+    line-height: 1em;
+    text-align: center;
+}
+.partnerTitle h1 {
+    font-size: 3em;
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
 
 /* Style for particles */
 .particles {
@@ -109,3 +175,31 @@
     width: 100%;
 }
 /* =================== */
+
+/* Footer Styling */
+.footerContainer {
+    width: 100%;
+    display: flex;
+    height: 130px;
+    align-items: center;
+    background: #ffcc33;
+    color: white;
+}
+.footerContainer h1 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-left: 3em;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* ============== */
+/* Horizontal Line Style */
+.line {
+    margin-top: 3px;
+    border: 2px solid #ffcc33;
+    width: 1.5em;
+}
+#schultz {
+    width: 200px;
+    font-size: 1em;
+}
