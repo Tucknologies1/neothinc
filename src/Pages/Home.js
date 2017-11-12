@@ -1,12 +1,21 @@
 import React, { Component } from "react";
-import Header from './Components/Header';
-
+import { Container, Button } from 'semantic-ui-react';
+import HeaderComponent from '../Pages/Components/HeaderComponent';
+import HeaderImage from './Components/HeaderImage';
 class Home extends React.Component {
     render() {
         return(
             <div>
-                <Header />
-                <h1>This is the home component</h1>
+                <HeaderComponent />
+                <div className="homeContainer">
+                    <Container textAlign='center'>
+                    <h1>THiNC TECHNOLOGY</h1>
+                    <h2>WEB MOBILE SOFTWARE</h2>
+                    <Button className="getStartedButton">
+                        Get Started
+                    </Button>
+                    </Container>
+                </div>
             </div>
         );
     }

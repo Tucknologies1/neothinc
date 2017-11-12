@@ -5,7 +5,7 @@ import './parts.css';
 
 require('./js/Typewriter.js');
 
-class Header extends React.Component {
+class HeaderImage extends React.Component {
 
     render() {
         return(
@@ -20,4 +20,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header
+export default HeaderImage

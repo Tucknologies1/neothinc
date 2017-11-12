@@ -8,6 +8,8 @@ import Faq from './Pages/Faq';
 import Services from './Pages/Services';
 import ContactUs from './Pages/ContactUs';
 
+import { Header } from 'semantic-ui-react';
+
 import {
   Route,
   NavLink,
@@ -18,14 +20,6 @@ class App extends Component {
     return (
         <HashRouter>
           <div>
-            <div className="header">
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/about-us">About Us</NavLink></li>
-              <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-              <li><NavLink to="/FAQ">FAQ</NavLink></li>
-              <li><NavLink to="/services">Services</NavLink></li>
-              <li><NavLink to="/contact-us">Contact</NavLink></li>
-            </div>
             <div className="contentContainer">
               <Route exact path="/" component={Home}/>
               <Route path="/about-us" component={AboutUs}/>
