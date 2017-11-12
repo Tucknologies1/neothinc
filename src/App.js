@@ -7,6 +7,7 @@ import Portfolio from './Pages/Portfolio';
 import Faq from './Pages/Faq';
 import Services from './Pages/Services';
 import ContactUs from './Pages/ContactUs';
+import Careers from './Pages/Careers';
 
 import { Header } from 'semantic-ui-react';
 
@@ -31,6 +32,7 @@ class App extends Component {
                 <NavLink to="/FAQ">FAQ</NavLink>
                 <NavLink to="/services">Services</NavLink>
                 <NavLink to="/contact-us">Contact</NavLink>
+                <NavLink to="/careers">Careers</NavLink>
               </div>
               </Header>
             <div className="contentContainer">
@@ -40,6 +42,7 @@ class App extends Component {
               <Route path="/FAQ" component={Faq}/>
               <Route path="/services" component={Services}/>
               <Route path="/contact-us" component={ContactUs}/>
+              <Route path="/careers" component={Careers} />
             </div>
           </div>
         </HashRouter>
