@@ -1,10 +1,27 @@
 /* Header styling */
-.header {
-    background: ghostwhite;
+.headerContainer {
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
 }
-.headerLinks {
-    display: inline;
-    float: right;
+.headerContainer .title {
+    margin: 1em;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.headerLinks a {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.5em;
+    color: black;
+}
+
+.headerLinks a:hover {
+    color: black;
 }
 /* Home CSS */
 .homeContainer {
@@ -19,12 +36,19 @@
 .homeContainer h1 {
     font-family: 'Cairo', sans-serif;
     color: white;
+    font-size: 50px;
+    font-weight: normal;
     letter-spacing: 5px;
 }
 
 .homeContainer h2 {
     font-family: 'Cairo', sans-serif;
+    font-weight: normal;
     color:white;
     letter-spacing: 5px;
     font-size: 20px;
+}
+.ui.button.getStartedButton {
+    background: white;
+    margin: 1rem;
 }
