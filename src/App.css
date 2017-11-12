@@ -8,6 +8,11 @@
 .headerContainer .title {
     margin: 0.2em;
 }
+
+.nav-bar {
+    position: relative;
+    z-index: 9999;
+}
 .links {
     display: flex;
     justify-content: flex-end;
