@@ -13,7 +13,7 @@ export default class HeaderComponent extends Component {
         const { activeItem } = this.state;
 
         return(
-            <div>
+            <div className='nav-bar'>
                 <Segment inverted attached raised>
                     <Menu inverted pointing secondary>
                         THiNC
