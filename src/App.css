@@ -19,12 +19,19 @@
 .homeContainer h1 {
     font-family: 'Cairo', sans-serif;
     color: white;
+    font-size: 50px;
+    font-weight: normal;
     letter-spacing: 5px;
 }
 
 .homeContainer h2 {
     font-family: 'Cairo', sans-serif;
+    font-weight: normal;
     color:white;
     letter-spacing: 5px;
     font-size: 20px;
+}
+.ui.button.getStartedButton {
+    background: white;
+    margin: 1rem;
 }
