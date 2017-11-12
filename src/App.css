@@ -1,16 +1,37 @@
 /* Header styling */
-.header {
-    background: ghostwhite;
+.headerContainer {
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
 }
-.headerLinks {
-    display: inline;
-    float: right;
+.headerContainer .title {
+    margin: 0.2em;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.headerLinks a {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.5em;
+    position: relative;
+    z-index: 100;
+    color: black;
+}
+
+.headerLinks a:hover {
+    color: black;
 }
 /* Home CSS */
 .homeContainer {
-    height: 900px;
+    height: 700px;
     width: 100%;
-    background-color: #F4D37D;
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,12 +40,156 @@
 .homeContainer h1 {
     font-family: 'Cairo', sans-serif;
     color: white;
+    font-size: 50px;
+    font-weight: normal;
     letter-spacing: 5px;
 }
 
 .homeContainer h2 {
     font-family: 'Cairo', sans-serif;
+    font-weight: normal;
     color:white;
     letter-spacing: 5px;
     font-size: 20px;
 }
+.ui.button.getStartedButton {
+    background: white;
+    position: relative;
+    z-index: 9999;
+    margin: 1rem;
+}
+/* Style for Blog Box */
+.blogBox {
+    position: absolute;
+    z-index: 2;
+    height: 90px;
+    width: 800px;
+    left: 30%;
+    top: 740px;
+    background:white;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18);
+}
+.blogBoxBtn {
+    position: relative;
+    right: 5%;
+    z-index: 3;
+    top: 50%;
+    float:right;
+    transform: translateY(-50%);
+}
+.ui.button.blogBoxBtn {
+    background-color: #348AC7;
+    color: #ffffff;
+}
+/* ================== */
+
+/* Home Container Two || Our Services */
+.homeContainerTwo {
+    background: #ffffff;
+    height: 800px;
+    display: flex;
+}
+.homeTwoTitle {
+    font-family: 'Cairo', sans-serif;
+}
+.leftServiceContainer {
+    flex:0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftServiceContainer h1 {
+    font-weight: normal;
+    font-size: 4em;
+    line-height: 0.5em;
+}
+.leftServiceContainer h2 {
+    font-weight: bolder;
+    font-size: 4em;
+}
+.rightServiceContainer{
+    flex:.75;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rightServiceContainer .ui.cards .ui.card {
+    margin: 2em;
+}
+.servicesDesc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+}
+.serviceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5%;
+}
+.serviceCard {
+    margin: 2em;
+}
+.ui.button.servicesBtn {
+    color: white;
+    background-color: #348AC7;
+}
+/* ================== */
+
+.homeContainerThree {
+    background: #ffffff;
+    height: 500px;
+}
+/* Partner CSS */
+.partnerContainer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.partnerCard {
+    width: 100px;
+    height: 100px;
+    margin-top: 5em;
+    margin-right: 4em;
+    margin-left: 4em;
+    background: black;
+}
+.partnerTitle{
+    font-family: 'Cairo', sans-serif;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+}
+.partners {
+    width: 100%;
+    height: 1000px;
+}
+
+/* Style for particles */
+.particles {
+    position: absolute;
+    width: 100%;
+}
+/* =================== */
+
+/* Footer Styling */
+.footerContainer {
+    width: 100%;
+    display: flex;
+    height: 130px;
+    align-items: center;
+    background: #348AC7;
+    color: white;
+}
+.footerContainer h1 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-left: 3em;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* ============== */

@@ -1,0 +1,31 @@
+.Head-Icon {
+  height: 80px;
+  margin: 80px 0;
+}
+
+.Gear-Icon {
+  position: absolute;
+  height: 45px;
+  top: 210px;
+  left: 50%;
+  animation: Icon-spin infinite 10s linear;
+}
+
+.Gear-Icon:hover {
+  animation: Icon-spin infinite 2s linear;
+}
+
+.Icon-Header {
+  background-color: #F4D37D;
+  height: 300px;
+  color: white;
+  text-align: center;
+}
+
+@keyframes Icon-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* END ICON STYLING */
