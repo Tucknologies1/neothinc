@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import CardBio from './Components/Card';
+
+import banner from '../Assets/images/img-slide.jpg';
+
 class AboutUs extends React.Component {
     render() {
         return (
@@ -8,15 +11,15 @@ class AboutUs extends React.Component {
                 <h1>ABOUT US</h1>
             </div>
 			{/* Where the page banner goes */}
-			<div class="headerBanner">
+			<div className="headerBanner">
 				<div>
 				</div>
 			</div>
 			{/* =========================== */}
 			<div className="aboutUsBio">
 				<div className="aboutUsTitle">
-					<h1>ABOUT US</h1>
-					<hr class="line"/>
+					<h1>THiNC.TEAM</h1>
+					<hr className="line"/>
 				</div>
 				<div className="cardBios">
 					<CardBio />
