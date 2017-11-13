@@ -98,7 +98,7 @@ class Header extends React.Component {
                                 "mode": "repulse"
                                 },
                                 "onclick": {
-                                "enable": true,
+                                "enable": false,
                                 "mode": "push"
                                 },
                                 "resize": true

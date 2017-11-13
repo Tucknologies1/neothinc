@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { NavLink, Link } from 'react-router-dom';
 import { Header, Segment, Menu } from 'semantic-ui-react';
+import './parts.css';
 
 export default class NavMenu extends Component {
     state = {activeItem: 'home'};

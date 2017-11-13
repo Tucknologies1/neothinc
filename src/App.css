@@ -77,28 +77,6 @@ body {
     height: 100vh;
     width: 100%;
 }
-
-.homeContainer h1 {
-    font-family: 'Cairo', sans-serif;
-    color: white;
-    font-size: 50px;
-    font-weight: normal;
-    letter-spacing: 5px;
-}
-
-.homeContainer h2 {
-    font-family: 'Cairo', sans-serif;
-    font-weight: normal;
-    color:white;
-    letter-spacing: 5px;
-    font-size: 20px;
-}
-.ui.button.getStartedButton {
-    background: white;
-    position: relative;
-    z-index: 9999;
-    margin: 1rem;
-}
 /* Style for Blog Box */
 .blogBox {
     position: absolute;
