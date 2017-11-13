@@ -1,13 +1,14 @@
 .Head-Icon {
-  height: 80px;
-  margin: 30px 0;
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  height: 25%;
 }
 
 .Gear-Icon {
   position: absolute;
-  height: 45px;
-  top: 300px;
-  left: 50%;
+  height: 30vh;
+  top: 40vh;
   animation: Icon-spin infinite 10s linear;
 }
 
@@ -25,19 +26,52 @@
 
 /* END ICON STYLING */
 
-.getStartedButton {
-  top: 80px;
+.Header-Container {
+  height: 100%;
+  width: 100%;
+  background: #ffb347;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Type-Header {
   font-size: 30px;
+  margin-top: 50vh;
+}
+
+.Typed-Word {
+  color: ;
 }
 
 .Cursor {
   animation: Blink 1s infinite alternate;
 }
 
+.getStartedButton {
+  top: 80px;
+}
+
 @keyframes Blink {
   from {color: black;}
   to {color: white;}
 }
+
+/* Style for particles */
+.particles {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.particles canvas {
+  width, height: 100% !important;
+}
+
+/* END HEADER STYLING */

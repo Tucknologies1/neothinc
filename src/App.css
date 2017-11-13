@@ -1,3 +1,13 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
 /* Header styling */
 .headerContainer {
     background-color: #ffffff;
@@ -30,17 +40,42 @@
 .headerLinks a:hover {
     color: black;
 }
+/* Underline reveal */
+.hvr-underline-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffcc33;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 /* Home CSS */
 .homeContainer {
-    height: 700px;
+    height: 100vh;
     width: 100%;
-    background: #ffb347;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .homeContainer h1 {
@@ -164,7 +199,7 @@
 .partnerCard {
     width: 150px;
     margin: 1.5em;
-    line-height: 1em;
+    line-height: 1.5em;
     text-align: center;
 }
 .partnerTitle h1 {
@@ -174,11 +209,6 @@
     text-align: center;
 }
 
-/* Style for particles */
-.particles {
-    position: absolute;
-    width: 100%;
-}
 /* =================== */
 
 /* Footer Styling */
@@ -201,10 +231,55 @@
 /* Horizontal Line Style */
 .line {
     margin-top: 3px;
-    border: 2px solid #ffcc33;
-    width: 1.5em;
+    border: 4px solid #ffcc33;
+    width: 30%;
 }
 #schultz {
     width: 200px;
     font-size: 1em;
+}
+/* ABOUT US STYLES */
+.yellowHeader {
+    background: #ffcc33;
+    text-align: center;
+    display: table;
+    height: 100px;
+    width: 100%;
+}
+.yellowHeader h1 {
+    font-family: 'Abel', sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.headerBanner {
+    height: 500px;
+    background:#348AC7;
+}
+.aboutUsBio {
+    height: 800px;
+}
+.aboutUsBio .aboutUsTitle {
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.aboutUsTitle h1 {
+    font-size: 4em;
+}
+.cardBios {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    align-items: center;
+}
+/* PORTFOLIO PAGE STYLES */
+.portfolioContainer {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }

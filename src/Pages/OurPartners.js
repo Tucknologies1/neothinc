@@ -5,21 +5,21 @@ class OurPartners extends React.Component {
         return(
             <div>
                 <div className="partnerContainer">
-                    <div className="partnerCard">
+                    <div className="partnerCard hvr-underline-reveal ">
                         HUNTKEY
                     </div>
-                    <div className="partnerCard">
+                    <div className="partnerCard hvr-underline-reveal ">
                         VALIDU
                     </div>
-                    <div className="partnerCard">
+                    <div className="partnerCard hvr-underline-reveal ">
                         MMBA
                     </div>
                 </div>
                 <div className="partnerContainer">
-                    <div className="partnerCard">
+                    <div className="partnerCard hvr-underline-reveal ">
                         GIBSONS
                     </div>
-                    <div id="schultz" className="partnerCard">
+                    <div id="schultz" className="partnerCard hvr-underline-reveal">
                         SCHULTZ VET
                     </div>
                 </div>

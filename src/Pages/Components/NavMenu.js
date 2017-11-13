@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { NavLink, Link } from 'react-router-dom';
 import { Header, Segment, Menu } from 'semantic-ui-react';
 
-export default class HeaderComponent extends Component {
+export default class NavMenu extends Component {
     state = {activeItem: 'home'};
 
     handleItemClick = (e, { name }) =>
