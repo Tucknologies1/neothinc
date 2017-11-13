@@ -1,3 +1,13 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
 /* Header styling */
 .headerContainer {
     background-color: #ffffff;
@@ -64,12 +74,15 @@
   }
 /* Home CSS */
 .homeContainer {
-    height: 700px;
+    height: 100vh;
     width: 100%;
     background: #ffb347;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,11 +219,6 @@
     text-align: center;
 }
 
-/* Style for particles */
-.particles {
-    position: absolute;
-    width: 100%;
-}
 /* =================== */
 
 /* Footer Styling */

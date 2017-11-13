@@ -8,7 +8,7 @@ import Faq from './Pages/Faq';
 import Services from './Pages/Services';
 import ContactUs from './Pages/ContactUs';
 import Careers from './Pages/Careers';
-import HeaderComponent from './Pages/Components/HeaderComponent';
+import NavMenu from './Pages/Components/NavMenu';
 
 import { Header } from 'semantic-ui-react';
 
@@ -23,7 +23,7 @@ class App extends Component {
         return (
             <HashRouter>
                 <div className="contentContainer">
-                    <HeaderComponent/>
+                    <NavMenu/>
                     <Route exact path="/" component={Home}/>
                     <Route path="/about-us" component={AboutUs}/>
                     <Route path="/portfolio" component={Portfolio}/>
