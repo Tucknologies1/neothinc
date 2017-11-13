@@ -50,6 +50,7 @@ class Home extends React.Component {
                 <div className="homeContainerThree">
                     <div className="partnerTitle">
                         <h1>OUR CLIENTS</h1>
+                        <hr class="lineClient"/>
                     </div>
                     <OurPartners />
                 </div>

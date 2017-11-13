@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {List, Tab, Label} from 'semantic-ui-react';
 import JobsComponent from './Components/JobsComponent';
+import SubHeader from './Components/SubHeader.js';
 
 class Careers extends React.Component {
     constructor(props) {
@@ -29,6 +30,7 @@ class Careers extends React.Component {
         //console.log(this.state);
         return(
             <div>
+              <SubHeader/>
                 <Tab panes={panes} menu={{secondary: true, pointing: true}}
                      renderActiveOnly={true}
                      onTabChange={this.handleTabChange}

@@ -1,10 +1,19 @@
 import React, { Component } from "react";
+import { Container } from 'semantic-ui-react';
+import QuestionAndAnswer from './Components/QuestionAndAnswer';
+import SubHeader from './Components/SubHeader.js';
 
 class Faq extends React.Component {
     render() {
         return (
             <div>
-                <h1> This is the faq page</h1>
+                <SubHeader/>
+                <div className="questionAndAnswerContainer">
+                    <QuestionAndAnswer/>
+                    <QuestionAndAnswer/>
+                    <QuestionAndAnswer/>
+                    <QuestionAndAnswer/>
+                </div>
             </div>
         );
     }
