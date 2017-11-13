@@ -40,28 +40,50 @@ const JOBS = [
     },
 ];
 
-class JobsComponent extends Component {
-    jobItems = JOBS.map((job) =>
-        <Item key={job.id}>
-            <Item.Content verticalAlign='middle'>
-                <Item.Header>{job.title}</Item.Header>
-                <Item.Meta>{job.dept}</Item.Meta>
-                <Item.Description>{job.location}</Item.Description>
-                <Item.Extra>
-                    <Button floated='right' color='blue'>
-                        View Job Details
-                    </Button>
-                </Item.Extra>
-            </Item.Content>
-        </Item>
-    );
+const INTERNS = [
+    {
+        id: 10,
+        dept: 'Engineering',
+        title: 'Software Engineer Internship',
+        location: 'East Lansing, MI'
+    },
+    {
+        id: 11,
+        dept: 'Sales',
+        title: 'Sales Internship',
+        location: 'East Lansing, MI'
+    }
+];
+
+export default class JobsComponent extends Component {
+
     render() {
+        let jobList = null;
+        if (this.props.activeIndex === 0) {
+            jobList = JOBS;
+        }
+        else if (this.props.activeIndex === 1) {
+            jobList = INTERNS;
+        }
+        const jobItems = jobList.map((job) =>
+            <Item key={job.id}>
+                <Item.Content verticalAlign='middle'>
+                    <Item.Header>{job.title}</Item.Header>
+                    <Item.Meta>{job.dept}</Item.Meta>
+                    <Item.Description>{job.location}</Item.Description>
+                    <Item.Extra>
+                        <Button floated='right' color='blue'>
+                            View Job Details
+                        </Button>
+                    </Item.Extra>
+                </Item.Content>
+            </Item>
+        );
+        console.log(this.props);
         return (
             <Item.Group divided unstackable>
-                {this.jobItems}
+                {jobItems}
             </Item.Group>
         )
     }
 }
-
-export default JobsComponent;
