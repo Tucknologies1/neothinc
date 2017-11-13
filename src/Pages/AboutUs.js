@@ -1,18 +1,16 @@
 import React, { Component } from "react";
 import CardBio from './Components/Card';
+import SubHeader from './Components/SubHeader.js';
+
 class AboutUs extends React.Component {
     render() {
         return (
 		<div>
+      <SubHeader/>
             <div className="yellowHeader">
                 <h1>ABOUT US</h1>
             </div>
-			{/* Where the page banner goes */}
-			<div class="headerBanner">
-				<div>
-				</div>
-			</div>
-			{/* =========================== */}
+
 			<div className="aboutUsBio">
 				<div className="aboutUsTitle">
 					<h1>ABOUT US</h1>

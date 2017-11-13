@@ -1,34 +1,7 @@
-.Head-Icon {
-  position: absolute;
-  top: 30vh;
-  left: 50%;
-  height: 25%;
-}
-
-.Gear-Icon {
-  position: absolute;
-  height: 30vh;
-  top: 40vh;
-  animation: Icon-spin infinite 10s linear;
-}
-
-.Icon-Header {
-  height: 120px;
-  color: white;
-  text-align: center;
-}
-
-@keyframes Icon-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-
-/* END ICON STYLING */
-
 .Header-Container {
   height: 100%;
   width: 100%;
+  font-family: 'Cairo', sans-serif;
   background: #ffb347;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center;  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -41,13 +14,39 @@
   justify-content: center;
 }
 
+.Header-Content h1 {
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+.Sub-Header h1 {
+  padding: 15px;
+}
+
+.Header-Content h2 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: normal;
+    color:white;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.ui.button.getStartedButton {
+    background: white;
+    position: relative;
+    z-index: 9999;
+    margin: 1rem;
+}
+
 .Type-Header {
   font-size: 30px;
   margin-top: 50vh;
 }
 
 .Typed-Word {
-  color: ;
+  color: black;
 }
 
 .Cursor {
@@ -73,5 +72,40 @@
 .particles canvas {
   width, height: 100% !important;
 }
-
 /* END HEADER STYLING */
+
+.nav-bar a:hover {
+  border-bottom-color: white !important;
+}
+
+.nav-bar a:hover + .active {
+  border-color: black !important;
+}
+
+/* END NAV MENU STYLING */
+
+.Head-Icon {
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  height: 25%;
+}
+
+.Gear-Icon {
+  position: absolute;
+  height: 30vh;
+  top: 40vh;
+  animation: Icon-spin infinite 10s linear;
+}
+
+.Icon-Header {
+  height: 120px;
+  color: white;
+  text-align: center;
+}
+
+@keyframes Icon-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* END ICON STYLING */
