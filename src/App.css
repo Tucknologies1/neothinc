@@ -210,7 +210,7 @@ body {
 .line {
     margin-top: 3px;
     border: 4px solid #ffcc33;
-    width: 30%;
+    width: 10%;
 }
 #schultz {
     width: 200px;
@@ -260,4 +260,59 @@ body {
     align-items: center;
     height: 100vh;
     width: 100%;
+}
+
+/* FAQ STYLING */
+
+.faqContainer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.questionAndAnswer {
+    display: flex;
+    justify-content: flex-start;
+}
+.qaCard {
+    font-size: 10em;
+    font-family: 'Abel', sans-serif;
+    line-height: 1.5em;
+    padding-left: 3em;
+}
+
+.lineClient {
+    margin-top: 3px;
+    border: 4px solid #ffcc33;
+    width: 10em;
+}
+/* CONTACT PAGE STYLE */
+.contactPageTitle {
+    margin-top: 10%;
+    text-align: center;
+}
+.contactPageTitle h1 {
+    font-size: 5em;
+}
+.contactInformation {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background:#348AC7;
+    height: 100vh;
+}
+.contactInformation .left {
+    flex: 1;
+    color: white;
+}
+.contactInformation .right {
+    flex: 1;
+    color: white;
+}
+
+.contactInformation h1 {
+    font-size: 7em;
+    margin-top: 3em;
+
 }
