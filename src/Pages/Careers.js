@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {List, Tab, Label} from 'semantic-ui-react';
 import JobsComponent from './Components/JobsComponent';
 import SubHeader from './Components/SubHeader.js';
-
+import Footer from './Components/Footer';
 const panes = [
     {
         menuItem: 'Job Openings',
@@ -26,6 +26,7 @@ class Careers extends React.Component {
             <div>
               <SubHeader/>
                 <Tab panes={panes} menu={{secondary: true, pointing: true}} renderActiveOnly={false}/>
+                <Footer/>
             </div>
         );
     }
