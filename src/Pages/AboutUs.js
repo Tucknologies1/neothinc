@@ -1,30 +1,21 @@
 import React, { Component } from "react";
 import CardBio from './Components/Card';
-<<<<<<< HEAD
 
 import banner from '../Assets/images/img-slide.jpg';
-=======
 import SubHeader from './Components/SubHeader.js';
->>>>>>> refs/remotes/origin/master
-
+import Footer from './Components/Footer';
 class AboutUs extends React.Component {
     render() {
         return (
 		<div>
       <SubHeader/>
-            <div className="yellowHeader">
-                <h1>ABOUT US</h1>
-            </div>
-<<<<<<< HEAD
 			{/* Where the page banner goes */}
 			<div className="headerBanner">
 				<div>
+					<h1 id="bannerFont">ABOUT US</h1>
 				</div>
 			</div>
 			{/* =========================== */}
-=======
-
->>>>>>> refs/remotes/origin/master
 			<div className="aboutUsBio">
 				<div className="aboutUsTitle">
 					<h1>THiNC.TEAM</h1>
@@ -39,6 +30,7 @@ class AboutUs extends React.Component {
 				</div>
 			</div>
 
+                <Footer />
 			{/* <div>
 				<div>
 					<h2>THiNC.history</h2>
