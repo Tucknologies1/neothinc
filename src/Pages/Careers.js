@@ -2,13 +2,30 @@ import React, { Component } from 'react';
 import {List, Tab, Label} from 'semantic-ui-react';
 import JobsComponent from './Components/JobsComponent';
 import SubHeader from './Components/SubHeader.js';
+import Footer from './Components/Footer';
 
-class Careers extends React.Component {
+const panes = [
+    {
+        menuItem: 'Job Openings',
+        pane: {
+            key: 'jobs',
+            content: <Tab.Pane attached={false}><JobsComponent /></Tab.Pane>
+        }
+    },
+    {
+        menuItem: 'Internships',
+        pane: {
+            key: 'Internships Opportunities',
+            content: <Tab.Pane attached={false}>Internship Opportunities</Tab.Pane>
+        }
+    }
+]
+
+export default class Careers extends React.Component {
     constructor(props) {
         super(props);
         this.state = { activeIndex: 0 };
     }
-
     handleTabChange = (e, { activeIndex }) =>
     {
         this.setState({ activeIndex });
@@ -40,5 +57,3 @@ class Careers extends React.Component {
         );
     }
 }
-
-export default Careers;
