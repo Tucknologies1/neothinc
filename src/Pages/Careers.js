@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import {List, Tab, Label} from 'semantic-ui-react';
+import {List, Tab, Label, Modal, Button} from 'semantic-ui-react';
 import JobsComponent from './Components/JobsComponent';
 import SubHeader from './Components/SubHeader.js';
 import Footer from './Components/Footer';
 import CareerForm from './CareerForm';
+
 // NOTE: Added shared data to live in parent component so other child component can pull from it
 const JOBS = [
     {
@@ -80,7 +81,9 @@ class Careers extends React.Component {
             <div>
               <SubHeader/>
                 <Tab panes={panes} menu={{secondary: true, pointing: true}} renderActiveOnly={false}/>
-                <CareerForm job = {this.state.jobs} updateJobListing = {updateJobListing.bind(this)}/>
+                <Modal trigger={<Button>Add Job</Button>}>
+                        <CareerForm job = {this.state.jobs} updateJobListing = {updateJobListing.bind(this)}/>
+                </Modal>
                 <Footer/>
             </div>
         );
