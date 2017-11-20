@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
@@ -84,8 +83,6 @@ src/semantic
 
 # dotenv environment variables file
 .env
-
->>>>>>> 3360e04961310fdc1b1b21bc24bb7090cc6f3707
 .idea/inspectionProfiles/
 .idea/misc.xml
 .idea/modules.xml
