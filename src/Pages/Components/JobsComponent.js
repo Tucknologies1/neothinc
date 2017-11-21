@@ -1,47 +1,12 @@
 import React, {Component} from 'react'
 import {Button, Image, Item} from 'semantic-ui-react'
 
-const JOBS = [
-    {
-        id: 1,
-        dept: 'Engineering',
-        title: 'Product Manager',
-        location: 'East Lansing, MI'
-    },
-    {
-        id: 2,
-        dept: 'Engineering',
-        title: 'Software Engineer - Mobile',
-        location: 'East Lansing, MI'
-    },
-    {
-        id: 3,
-        dept: 'Engineering',
-        title: 'Software Engineer - Web',
-        location: 'East Lansing, MI'
-    },
-    {
-        id: 4,
-        dept: 'Engineering',
-        title: 'Software Engineer - Full Stack',
-        location: 'East Lansing, MI'
-    },
-    {
-        id: 5,
-        dept: 'Sales',
-        title: 'Sales Representative',
-        location: 'East Lansing, MI'
-    },
-    {
-        id: 6,
-        dept: 'Accounting',
-        title: 'Accountant',
-        location: 'East Lansing, MI'
-    },
-];
 
 class JobsComponent extends Component {
-    jobItems = JOBS.map((job) =>
+
+    render() {
+    const JOBS = this.props.job;
+    const jobItems = JOBS.map((job) =>
         <Item key={job.id}>
             <Item.Content verticalAlign='middle'>
                 <Item.Header>{job.title}</Item.Header>
@@ -55,10 +20,9 @@ class JobsComponent extends Component {
             </Item.Content>
         </Item>
     );
-    render() {
         return (
             <Item.Group divided unstackable>
-                {this.jobItems}
+                {jobItems}
             </Item.Group>
         )
     }
