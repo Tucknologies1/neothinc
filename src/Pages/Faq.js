@@ -91,7 +91,7 @@ class Faq extends React.Component {
     render() {
         return (
             <div>
-                <SubHeader/>
+                {/* <SubHeader/> */}
                <div className="headerBanner">
                     <div>
                         <h1 id="bannerFont">Q&A</h1>

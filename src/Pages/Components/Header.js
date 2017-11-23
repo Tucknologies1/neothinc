@@ -153,7 +153,7 @@ class Header extends React.Component {
                     }
                   </h1>
                 </span>
-                <Button className="getStartedButton">
+                <Button className="getStartedButton" circular size="massive">
                   Get Started
                 </Button>
               </Container>

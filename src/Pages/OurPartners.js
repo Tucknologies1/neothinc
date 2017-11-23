@@ -6,21 +6,21 @@ class OurPartners extends React.Component {
             <div>
                 <div className="partnerContainer">
                     <div className="partnerCard hvr-underline-reveal ">
-                        HUNTKEY
+                        <a href="http://www.huntkey.com/en/">HUNTKEY</a>
                     </div>
                     <div className="partnerCard hvr-underline-reveal ">
-                        VALIDU
+                        <a href="https://validu.net/">VALIDU</a>
                     </div>
                     <div className="partnerCard hvr-underline-reveal ">
-                        MMBA
+                        <a href="https://www.mmbaonline.org/aws/MMBA/pt/sp/home_page">MMBA</a>
                     </div>
                 </div>
                 <div className="partnerContainer">
                     <div className="partnerCard hvr-underline-reveal ">
-                        GIBSONS
+                        <a href="Gibson's Bookstore">GIBSON'S</a>
                     </div>
                     <div id="schultz" className="partnerCard hvr-underline-reveal">
-                        SCHULTZ VET
+                        <a href="http://schultzvetclinic.com/">SCHULTZ VET</a>
                     </div>
                 </div>
             </div>

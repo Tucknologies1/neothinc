@@ -8,25 +8,21 @@ class AboutUs extends React.Component {
     render() {
         return (
 		<div>
-      <SubHeader/>
-			{/* Where the page banner goes */}
+      {/* <SubHeader/> */}
 			<div className="headerBanner">
 				<div>
 					<h1 id="bannerFont">ABOUT US</h1>
 				</div>
 			</div>
-			{/* =========================== */}
 			<div className="aboutUsBio">
 				<div className="aboutUsTitle">
 					<h1>THiNC.TEAM</h1>
 					<hr className="line"/>
 				</div>
 				<div className="cardBios">
-					<CardBio />
-					<CardBio />
-					<CardBio />
-					<CardBio />
-					<CardBio />
+					<CardBio name="Craig T." position="CEO" aboutYourself="I like Thinc"/>
+					<CardBio name="Bryan N." position="CTO" aboutYourself="I'm from Wisconson"/>
+					<CardBio name="Matt" position="Senior Web Developer" aboutYourself="I like Programming"/>
 				</div>
 			</div>
 

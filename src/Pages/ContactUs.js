@@ -4,7 +4,7 @@ class Contact extends React.Component {
     render() {
         return(
             <div>
-              <SubHeader/>
+              {/* <SubHeader/> */}
                 <div className="contactInformation">
                     <div className="left">
                         <h1>Email </h1>

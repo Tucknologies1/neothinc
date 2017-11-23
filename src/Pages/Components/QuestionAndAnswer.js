@@ -23,13 +23,6 @@ class QuestionAndAnswer extends React.Component {
                     </Reveal.Content>
                 </Reveal>
             </div>
-            // <div className="questionAndAnswer">
-            //     <div className="qaCard">
-            //         Q:
-            //         <br/>
-            //         A:
-            //     </div>
-            // </div>
         );
     }
 }

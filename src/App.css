@@ -116,17 +116,18 @@ body {
 .leftServiceContainer {
     flex:0.5;
     display: flex;
+    padding: 4%;
     align-items: center;
     justify-content: center;
 }
 .leftServiceContainer h1 {
     font-weight: normal;
-    font-size: 4em;
+    font-size: 5em;
     line-height: 0.5em;
 }
 .leftServiceContainer h2 {
     font-weight: bolder;
-    font-size: 4em;
+    font-size: 5em;
 }
 .rightServiceContainer{
     flex:.75;
@@ -139,9 +140,14 @@ body {
     margin: 2em;
 }
 .servicesDesc {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
-    width: 300px;
+    width: 500px;
+}
+.servicesDesc p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-family: 'Cairo', sans-serif;
 }
 .serviceContainer {
     display: flex;
@@ -162,7 +168,7 @@ body {
     background: #ffffff;
     height: 500px;
 }
-/* Partner CSS */
+/* Client CSS */
 .partnerContainer {
     display: flex;
     flex-direction: row;
@@ -174,11 +180,19 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
 .partnerCard {
     width: 150px;
     margin: 1.5em;
     line-height: 1.5em;
     text-align: center;
+}
+.partnerCard a {
+    color: black;
+}
+
+.partnerCard a:hover {
+    color: black;
 }
 .partnerTitle h1 {
     font-size: 3em;
@@ -257,7 +271,7 @@ body {
 }
 .cardBios {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 2%;
     align-items: center;
 }
@@ -276,7 +290,7 @@ body {
     height: 100vh;
     width: 100%;
 }
-/* Card Styling */
+/* QA Card Styling */
 .questionAndAnswerContainer {
     display: flex;
     justify-content: space-around;

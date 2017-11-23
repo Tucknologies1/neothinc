@@ -35,10 +35,11 @@ class Home extends React.Component {
                         <h1>OUR</h1>
                         <h2>SERVICES</h2>
                         <div className = "servicesDesc">
-                            <p>WE HAVE THE BEST SHIT HERE </p>
+                            <p>THiNC takes pride in building custom technology solutions for our clients. We believe that the best technology solves real problems. Our products are designed to make your life better, make your business more effective, and achieve your goals.</p>
                         </div>
-                        <Button className = "servicesBtn">
-                            Get Started
+                        {/* Link this button to something */}
+                        <Button className = "servicesBtn" circular size="massive">
+                            Learn More
                         </Button>
                     </div>
                 </div>
