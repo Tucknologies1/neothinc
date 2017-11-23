@@ -15,9 +15,8 @@ export default class NavMenu extends Component {
 
         return(
             <div className='nav-bar'>
-                <Segment inverted attached raised>
-                    <Menu inverted pointing secondary>
-                        THiNC
+                <Segment className="menuNavBar" attached raised borderless>
+                    <Menu className="menuNavBar" pointing secondary borderless>
                         <Menu.Menu position='right'>
                             <Menu.Item as={NavLink} name='home' exact to='/' active={activeItem === 'home'} onClick={this.handleItemClick}/>
                             <Menu.Item as={NavLink} name='about us' to='/about-us' active={activeItem === 'about us'} onClick={this.handleItemClick}/>

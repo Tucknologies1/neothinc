@@ -18,10 +18,13 @@ body {
 .headerContainer .title {
     margin: 0.2em;
 }
-
+.ui.attached.segment {
+    border: none !important;
+}
 .nav-bar {
-    position: relative;
+    position: absolute;
     z-index: 9999;
+    right: 0;
 }
 .links {
     display: flex;
@@ -38,7 +41,7 @@ body {
 }
 
 .headerLinks a:hover {
-    color: black;
+    color: black !important;
 }
 /* Underline reveal */
 .hvr-underline-reveal {
@@ -152,6 +155,7 @@ body {
 .serviceContainer {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     margin: 5%;
 }

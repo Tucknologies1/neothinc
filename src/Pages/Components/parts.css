@@ -74,13 +74,28 @@
   height: 100% !important;
 }
 /* END HEADER STYLING */
+.ui.raised.attached.segment.menuNavBar {
+  background: transparent !important;
+}
+.ui.secondary.pointing.menu .active.item {
+  border-color: white !important;
+}
+.ui.secondary.pointing.menu {
+  border: none !important;
+}
 
+.nav-bar a {
+  color: white !important;
+}
+.nav-bar a + .active {
+  border-bottom-color: white !important;
+}
 .nav-bar a:hover {
   border-bottom-color: white !important;
 }
 
 .nav-bar a:hover + .active {
-  border-color: black !important;
+  border-color: white !important;
 }
 
 /* END NAV MENU STYLING */
