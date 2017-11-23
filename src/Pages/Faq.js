@@ -3,6 +3,7 @@ import { Container } from 'semantic-ui-react';
 import QuestionAndAnswer from './Components/QuestionAndAnswer';
 import SubHeader from './Components/SubHeader.js';
 import Footer from './Components/Footer';
+import Particlez from './Components/Particlez';
 // TODO: Decide to keep on client side or server side
 const QUESTION_AND_ANSWERS = [
     {
@@ -93,6 +94,7 @@ class Faq extends React.Component {
             <div>
                 {/* <SubHeader/> */}
                <div className="headerBanner">
+                    <Particlez />
                     <div>
                         <h1 id="bannerFont">Q&A</h1>
                     </div>

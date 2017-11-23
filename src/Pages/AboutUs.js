@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CardBio from './Components/Card';
 
+import Particlez from './Components/Particlez';
 import banner from '../Assets/images/img-slide.jpg';
 import SubHeader from './Components/SubHeader.js';
 import Footer from './Components/Footer';
@@ -10,6 +11,7 @@ class AboutUs extends React.Component {
 		<div>
       {/* <SubHeader/> */}
 			<div className="headerBanner">
+				<Particlez />
 				<div>
 					<h1 id="bannerFont">ABOUT US</h1>
 				</div>

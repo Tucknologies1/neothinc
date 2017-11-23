@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   font-family: 'Cairo', sans-serif;
-  background: #ffb347;  /* fallback for old browsers */
+  background: #ffcc33;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center;  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-size: cover;

@@ -4,6 +4,7 @@ import JobsComponent from './Components/JobsComponent';
 import SubHeader from './Components/SubHeader.js';
 import Footer from './Components/Footer';
 import CareerForm from './CareerForm';
+import Particlez from './Components/Particlez';
 
 // NOTE: Added shared data to live in parent component so other child component can pull from it
 const JOBS = [
@@ -79,7 +80,13 @@ class Careers extends React.Component {
         ];
         return(
             <div>
-              <SubHeader/>
+              {/* <SubHeader/> */}
+                <div className="headerBanner">
+                    <Particlez />
+                    <div>
+                        <h1 id="bannerFont">CAREERS</h1>
+                    </div>
+                </div>
                 <Tab panes={panes} menu={{secondary: true, pointing: true}} renderActiveOnly={false}/>
                 <Modal trigger={<Button>Add Job</Button>}>
                         <CareerForm job = {this.state.jobs} updateJobListing = {updateJobListing.bind(this)}/>

@@ -251,7 +251,7 @@ body {
 
 .headerBanner {
     height: 500px;
-    background:#348AC7;
+    background:#ffcc33;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,11 +300,11 @@ body {
 /* QA Card Styling */
 .questionAndAnswerContainer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 .revealContainer {
-    margin: 2em;
+    width: 100vw;
 }
 .ui.move.reveal {
     white-space: pre-wrap !important ;
@@ -315,9 +315,11 @@ body {
     align-items: center;
     word-break: break-all;
     justify-content: center;
-    background: #fff;
-    color: #000;
-    width: 600px;
+    background: linear-gradient(
+        rgba(20,20,20, .9),
+        rgba(20,20,20, .9));
+    color: #fff;
+    width: 100vw;
     height: 300px;
 }
 .answerHidden {
@@ -328,7 +330,7 @@ body {
     justify-content: center;
     background: #fff;
     color: #000;
-    width: 600px;
+    width: 100%;
     height: 300px;
     font-size: 1.5em;
     font-family: 'Abel', sans-serif;
