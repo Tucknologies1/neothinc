@@ -15,8 +15,8 @@ export default class NavMenu extends Component {
 
         return(
             <div className='nav-bar'>
-                <Segment className="menuNavBar" attached raised borderless>
-                    <Menu className="menuNavBar" pointing secondary borderless>
+                <Segment className="menuNavBar" attached raised >
+                    <Menu className="menuNavBar" pointing secondary >
                         <Menu.Menu position='right'>
                             <Menu.Item as={NavLink} name='home' exact to='/' active={activeItem === 'home'} onClick={this.handleItemClick}/>
                             <Menu.Item as={NavLink} name='about us' to='/about-us' active={activeItem === 'about us'} onClick={this.handleItemClick}/>

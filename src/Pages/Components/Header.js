@@ -9,12 +9,12 @@ import { Card, Divider } from 'semantic-ui-react';
 class Header extends React.Component {
     state = {
       typing: true,
-    }
+    };
     done = () => {
       this.setState({ typing: false }, () => {
         this.setState({ typing: true })
       });
-    }
+    };
     render() {
         return(
           <div className="Header-Container">

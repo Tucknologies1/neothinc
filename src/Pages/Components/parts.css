@@ -86,9 +86,11 @@
 
 .nav-bar a {
   color: white !important;
+  outline: 0;
 }
 .nav-bar a + .active {
   border-bottom-color: white !important;
+  outline: 0;
 }
 .nav-bar a:hover {
   border-bottom-color: white !important;
@@ -96,6 +98,7 @@
 
 .nav-bar a:hover + .active {
   border-color: white !important;
+  outline: 0;
 }
 
 /* END NAV MENU STYLING */
