@@ -323,3 +323,7 @@ body {
     margin-top: 3em;
 
 }
+/* MODAL CSS */
+.modalContainer {
+    height: 500px;
+}

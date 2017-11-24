@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Button, Image, Item} from 'semantic-ui-react'
 
+
 const JOBS = [
     {
         id: 1,
