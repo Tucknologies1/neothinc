@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@types/react": "^16.0.22",
+    "express": "^4.16.2",
     "gulp": "^3.9.1",
     "hover.css": "^2.2.1",
+    "morgan": "^1.9.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-native-typewriter": "^0.5.3",
@@ -16,7 +18,8 @@
     "react-typist": "^2.0.4",
     "semantic-ui": "^2.2.13",
     "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.76.0"
+    "semantic-ui-react": "^0.76.0",
+    "socket.io": "^2.0.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -58,6 +58,7 @@ const INTERNS = [
         location: 'East Lansing, MI'
     }
 ];
+
 class Careers extends React.Component {
         constructor(props) {
             super(props);
