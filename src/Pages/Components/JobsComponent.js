@@ -5,13 +5,7 @@ import {Button, Image, Item} from 'semantic-ui-react'
 
 class JobsComponent extends Component {
     render() {
-        let jobList = null;
-        if (this.props.activeIndex === 0) {
-            jobList = this.props.jobList;
-        }
-        else if (this.props.activeIndex === 1) {
-            jobList = this.props.jobList;
-        }
+        const jobList = this.props.jobList;
         const jobItems = jobList.map((job) =>
             <Item key={job.id}>
                 <Item.Content verticalAlign='middle'>

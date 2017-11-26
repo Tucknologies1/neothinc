@@ -287,9 +287,6 @@ body {
     width: 100%;
 }
 
-.portfolioCards {
-
-}
 /* FAQ STYLING */
 
 .faqContainer {
@@ -378,4 +375,20 @@ body {
 /* MODAL CSS */
 .modalContainer {
     height: 500px;
+}
+
+/* CHAT STYLES */
+.conversation-container > .header {
+    background-color: #3366ff;
+}
+.widget-container > .launcher {
+        background-color: #3366ff;
+}
+
+.messages-container > .message > .client {
+    background-color: #ffdf80;
+}
+
+.middle.aligned.content>.header {
+    background-color: transparent;
 }

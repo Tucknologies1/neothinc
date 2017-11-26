@@ -3,25 +3,33 @@ import { Container, Button } from 'semantic-ui-react';
 import Header from './Components/Header.js';
 import './Components/parts.css';
 import { Card, Divider } from 'semantic-ui-react';
-
+import ChatWindow from './Components/ChatWindow';
 import ServiceCard from './ServiceCard';
 import OurPartners from './OurPartners';
 import Footer from './Components/Footer';
 
+import socketIOClient from 'socket.io-client';
 class Home extends React.Component {
-    state = {
-      typing: true,
+    constructor(props) {
+        super(props);
+        this.state = {
+            // Endpoint for websocket connection local host
+            endpoint: "http://192.168.1.11:9000"
+        }
     }
-    done = () => {
-      this.setState({ typing: false }, () => {
-        this.setState({ typing: true })
-      });
-    }
+
     render() {
+        // Web socket connection
+        const socket = socketIOClient(this.state.endpoint);
+        socket.on('news', function(data) {
+            console.log(data);
+        });
+
         return(
             <div>
                 <div className="homeContainer">
                   <Header />
+                  <ChatWindow />
                 </div>
                 {/* <div className="blogBox">
                     Insert Blog Information Component here
@@ -51,7 +59,7 @@ class Home extends React.Component {
                 <div className="homeContainerThree">
                     <div className="partnerTitle">
                         <h1>OUR CLIENTS</h1>
-                        <hr class="lineClient"/>
+                        <hr className ="lineClient"/>
                     </div>
                     <OurPartners />
                 </div>

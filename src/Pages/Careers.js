@@ -84,21 +84,19 @@ class Careers extends React.Component {
     render() {
         // Make update job listing availble for child CareerForm Component
         var updateJobListing = this.updateJobListing;
-        // Current Active Tab
         const activeTab = {
             idx: this.state.activeIndex
         };
         const panes = [
                 {
                     menuItem: 'Job Openings',
-                    render  : () => <Tab.Pane attached={false}><JobsComponent jobList = {this.state.jobs} activeIndex={this.state.activeIndex} /></Tab.Pane>
+                    render  : () => <Tab.Pane attached={false}><JobsComponent jobList = {JOBS} /></Tab.Pane>
                 },
                 {
                     menuItem: 'Internships',
-                    render  : () => <Tab.Pane attached={false}><JobsComponent jobList = {this.state.jobs} activeIndex={this.state.activeIndex} /></Tab.Pane>
+                    render  : () => <Tab.Pane attached={false}><JobsComponent jobList = {INTERNS} /></Tab.Pane>
                 }
         ];
-        //console.log(this.state);
         return(
 
             <div>
