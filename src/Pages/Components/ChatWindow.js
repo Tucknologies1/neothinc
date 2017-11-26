@@ -19,13 +19,10 @@ class ChatWindow extends React.Component {
     }
  // NOTE: Message logic controlled here
     _handleNewUserMessage = (newMessage) => {
-        console.log(newMessage);
+        const socket = socketIOClient(this.state.endpoint);
+        socket.emit('messageSent', newMessage);
     }
     render() {
-        const socket = socketIOClient(this.state.endpoint);
-        socket.on('news', function(data) {
-            console.log(data);
-        });
         return (<div>
             <Widget
                     handleNewUserMessage={this._handleNewUserMessage}

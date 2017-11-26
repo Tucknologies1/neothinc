@@ -10,8 +10,13 @@ const io = socketIO(server);
 const PORT = process.env.PORT || 9000;
 
 io.on('connection', socket => {
-  console.log('New Client connected');
-  socket.emit('news', { hello: 'world' });
+  var address = socket.conn.remoteAddress;
+  console.log('New Client connected' + address);
+
+  socket.on('messageSent', (data) => {
+    console.log(data);
+    console.log("Store this data on database");
+  })
   socket.on('disconnect', () => {
     console.log('Client disconnected');
   });
