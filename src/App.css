@@ -388,7 +388,7 @@ body {
 .messages-container > .message > .client {
     background-color: #ffdf80;
 }
-
-.middle.aligned.content>.header {
+/* Semantic Header restyling */
+.content>.header {
     background-color: transparent;
 }

@@ -8,22 +8,10 @@ import ServiceCard from './ServiceCard';
 import OurPartners from './OurPartners';
 import Footer from './Components/Footer';
 
-import socketIOClient from 'socket.io-client';
 class Home extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            // Endpoint for websocket connection local host
-            endpoint: "http://192.168.1.11:9000"
-        }
-    }
-
     render() {
         // Web socket connection
-        const socket = socketIOClient(this.state.endpoint);
-        socket.on('news', function(data) {
-            console.log(data);
-        });
+       
 
         return(
             <div>
