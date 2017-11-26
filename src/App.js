@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home';
@@ -9,15 +10,16 @@ import Services from './Pages/Services';
 import ContactUs from './Pages/ContactUs';
 import Careers from './Pages/Careers';
 import NavMenu from './Pages/Components/NavMenu';
-
 import { Header } from 'semantic-ui-react';
-
+import { Authorization } from './HOC/AuthorizationHOC';
 import {
     Route,
     NavLink,
     HashRouter
 } from 'react-router-dom';
 
+// Use Admin(Route) to call HOC
+const Admin = Authorization(['asdasd','asdsad']);
 class App extends Component {
     render() {
         return (

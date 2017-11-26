@@ -4,6 +4,7 @@ import { Container } from 'semantic-ui-react';
 import SubHeader from './Components/SubHeader.js';
 import Footer from './Components/Footer';
 import Particlez from './Components/Particlez';
+
 class Portfolio extends React.Component {
     render() {
         return (
