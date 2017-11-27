@@ -3,25 +3,21 @@ import { Container, Button } from 'semantic-ui-react';
 import Header from './Components/Header.js';
 import './Components/parts.css';
 import { Card, Divider } from 'semantic-ui-react';
-
+import ChatWindow from './Components/ChatWindow';
 import ServiceCard from './ServiceCard';
 import OurPartners from './OurPartners';
 import Footer from './Components/Footer';
 
 class Home extends React.Component {
-    state = {
-      typing: true,
-    }
-    done = () => {
-      this.setState({ typing: false }, () => {
-        this.setState({ typing: true })
-      });
-    }
     render() {
+        // Web socket connection
+       
+
         return(
             <div>
                 <div className="homeContainer">
                   <Header />
+                  <ChatWindow />
                 </div>
                 {/* <div className="blogBox">
                     Insert Blog Information Component here
@@ -35,10 +31,11 @@ class Home extends React.Component {
                         <h1>OUR</h1>
                         <h2>SERVICES</h2>
                         <div className = "servicesDesc">
-                            <p>WE HAVE THE BEST SHIT HERE </p>
+                            <p>THiNC takes pride in building custom technology solutions for our clients. We believe that the best technology solves real problems. Our products are designed to make your life better, make your business more effective, and achieve your goals.</p>
                         </div>
-                        <Button className = "servicesBtn">
-                            Get Started
+                        {/* Link this button to something */}
+                        <Button className = "servicesBtn" circular size="massive">
+                            Learn More
                         </Button>
                     </div>
                 </div>
@@ -50,7 +47,7 @@ class Home extends React.Component {
                 <div className="homeContainerThree">
                     <div className="partnerTitle">
                         <h1>OUR CLIENTS</h1>
-                        <hr class="lineClient"/>
+                        <hr className ="lineClient"/>
                     </div>
                     <OurPartners />
                 </div>

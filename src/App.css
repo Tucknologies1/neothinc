@@ -18,10 +18,13 @@ body {
 .headerContainer .title {
     margin: 0.2em;
 }
-
+.ui.attached.segment {
+    border: none !important;
+}
 .nav-bar {
-    position: relative;
+    position: absolute;
     z-index: 9999;
+    right: 0;
 }
 .links {
     display: flex;
@@ -38,7 +41,7 @@ body {
 }
 
 .headerLinks a:hover {
-    color: black;
+    color: black !important;
 }
 /* Underline reveal */
 .hvr-underline-reveal {
@@ -116,17 +119,18 @@ body {
 .leftServiceContainer {
     flex:0.5;
     display: flex;
+    padding: 4%;
     align-items: center;
     justify-content: center;
 }
 .leftServiceContainer h1 {
     font-weight: normal;
-    font-size: 4em;
+    font-size: 5em;
     line-height: 0.5em;
 }
 .leftServiceContainer h2 {
     font-weight: bolder;
-    font-size: 4em;
+    font-size: 5em;
 }
 .rightServiceContainer{
     flex:.75;
@@ -139,13 +143,19 @@ body {
     margin: 2em;
 }
 .servicesDesc {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
-    width: 300px;
+    width: 500px;
+}
+.servicesDesc p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-family: 'Cairo', sans-serif;
 }
 .serviceContainer {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     margin: 5%;
 }
@@ -162,7 +172,7 @@ body {
     background: #ffffff;
     height: 500px;
 }
-/* Partner CSS */
+/* Client CSS */
 .partnerContainer {
     display: flex;
     flex-direction: row;
@@ -174,11 +184,19 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
 .partnerCard {
     width: 150px;
     margin: 1.5em;
     line-height: 1.5em;
     text-align: center;
+}
+.partnerCard a {
+    color: black;
+}
+
+.partnerCard a:hover {
+    color: black;
 }
 .partnerTitle h1 {
     font-size: 3em;
@@ -233,7 +251,7 @@ body {
 
 .headerBanner {
     height: 500px;
-    background:#348AC7;
+    background:#ffcc33;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,7 +275,7 @@ body {
 }
 .cardBios {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 2%;
     align-items: center;
 }
@@ -276,16 +294,47 @@ body {
     height: 100vh;
     width: 100%;
 }
-
-.questionAndAnswer {
+/* QA Card Styling */
+.questionAndAnswerContainer {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.revealContainer {
+    width: 100vw;
+}
+.ui.move.reveal {
+    white-space: pre-wrap !important ;
+}
+.questionVisible {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    word-break: break-all;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(20,20,20, .9),
+        rgba(20,20,20, .9));
+    color: #fff;
+    width: 100vw;
+    height: 300px;
+}
+.answerHidden {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    word-break: break-all;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    width: 100%;
+    height: 300px;
+    font-size: 1.5em;
+    font-family: 'Abel', sans-serif;
 }
 .qaCard {
-    font-size: 10em;
+    font-size: 2em;
     font-family: 'Abel', sans-serif;
-    line-height: 1.5em;
-    padding-left: 3em;
 }
 
 .lineClient {
@@ -326,4 +375,20 @@ body {
 /* MODAL CSS */
 .modalContainer {
     height: 500px;
+}
+
+/* CHAT STYLES */
+.conversation-container > .header {
+    background-color: #3366ff;
+}
+.widget-container > .launcher {
+        background-color: #3366ff;
+}
+
+.messages-container > .message > .client {
+    background-color: #ffdf80;
+}
+/* Semantic Header restyling */
+.content>.header {
+    background-color: transparent;
 }

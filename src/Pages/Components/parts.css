@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   font-family: 'Cairo', sans-serif;
-  background: #ffb347;  /* fallback for old browsers */
+  background: #ffcc33;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center;  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-size: cover;
@@ -17,7 +17,7 @@
 .Header-Content h1 {
     font-family: 'Cairo', sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 3em;
     font-weight: normal;
     letter-spacing: 5px;
 }
@@ -54,7 +54,7 @@
 }
 
 .getStartedButton {
-  top: 80px;
+  top: 40px;
 }
 
 @keyframes Blink {
@@ -70,16 +70,35 @@
 }
 
 .particles canvas {
-  width, height: 100% !important;
+  width: 100%;
+  height: 100% !important;
 }
 /* END HEADER STYLING */
+.ui.raised.attached.segment.menuNavBar {
+  background: transparent !important;
+}
+.ui.secondary.pointing.menu .active.item {
+  border-color: white !important;
+}
+.ui.secondary.pointing.menu {
+  border: none !important;
+}
 
+.nav-bar a {
+  color: white !important;
+  outline: 0;
+}
+.nav-bar a + .active {
+  border-bottom-color: white !important;
+  outline: 0;
+}
 .nav-bar a:hover {
   border-bottom-color: white !important;
 }
 
 .nav-bar a:hover + .active {
-  border-color: black !important;
+  border-color: white !important;
+  outline: 0;
 }
 
 /* END NAV MENU STYLING */
