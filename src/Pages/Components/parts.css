@@ -23,7 +23,24 @@
 }
 
 .Sub-Header h1 {
-  padding: 15px;
+  padding-bottom: 30px;
+}
+
+.Header-Container.Sub-Header {
+  border-bottom: 1.5px solid lightgrey;
+}
+
+.ui.inverted.segment, .ui.primary.inverted.segment {
+  /* OVERRIDE HEADER STYLING */
+  background: #ffb347 !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffcc33, #ffb347)  no-repeat center center !important;
+  border: 0px solid #ffb347 !important;
+}
+
+.ui.secondary.inverted.pointing.menu {
+  /* OVERRIDE MORE HEADER STYLING BECAUSE IM LAZY AND FUCK SEMANTIC */
+  border-width: 0px !important;
 }
 
 .Header-Content h2 {
@@ -72,6 +89,7 @@
 .particles canvas {
   width, height: 100% !important;
 }
+
 /* END HEADER STYLING */
 
 .nav-bar a:hover {
