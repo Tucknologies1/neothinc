@@ -241,6 +241,10 @@ body {
 .headerBanner {
     height: 500px;
     background:#348AC7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 .aboutUsBio {
     height: 800px;
@@ -254,6 +258,9 @@ body {
 
 .aboutUsTitle h1 {
     font-size: 4em;
+}
+#bannerFont {
+    font-family: 'Abel', sans-serif;
 }
 .cardBios {
     display: flex;
@@ -322,4 +329,8 @@ body {
     font-size: 7em;
     margin-top: 3em;
 
+}
+/* MODAL CSS */
+.modalContainer {
+    height: 500px;
 }
