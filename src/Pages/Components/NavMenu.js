@@ -4,7 +4,7 @@ import { Header, Segment, Menu } from 'semantic-ui-react';
 import './parts.css';
 
 export default class NavMenu extends Component {
-    state = {activeItem: 'home'};
+    state = {activeItem: ''};
 
     handleItemClick = (e, { name }) =>
         this.setState({ activeItem: name });
@@ -15,17 +15,16 @@ export default class NavMenu extends Component {
 
         return(
             <div className='nav-bar'>
-                <Segment inverted attached raised>
-                    <Menu inverted pointing secondary>
-                        THiNC
+                <Segment className="menuNavBar" attached raised >
+                    <Menu className="menuNavBar" pointing secondary >
                         <Menu.Menu position='right'>
-                            <Menu.Item as={Link} name='home' to='/' active={activeItem === 'home'} onClick={this.handleItemClick}/>
-                            <Menu.Item as={Link} name='about us' to='/about-us' active={activeItem === 'about us'} onClick={this.handleItemClick}/>
-                            <Menu.Item as={Link} name='portfolio' to='/portfolio' active={activeItem === 'portfolio'} onClick={this.handleItemClick} />
-                            <Menu.Item as={Link} name='FAQ' to='/FAQ' active={activeItem === 'FAQ'} onClick={this.handleItemClick} />
-                            <Menu.Item as={Link} name='services' to='/services' active={activeItem === 'services'} onClick={this.handleItemClick} />
-                            <Menu.Item as={Link} name='contact' to='/contact-us' active={activeItem === 'contact'} onClick={this.handleItemClick} />
-                            <Menu.Item as={Link} name='careers' to='/careers' active={activeItem === 'careers'} onClick={this.handleItemClick} />
+                            <Menu.Item as={NavLink} name='home' exact to='/' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+                            <Menu.Item as={NavLink} name='about us' to='/about-us' active={activeItem === 'about us'} onClick={this.handleItemClick}/>
+                            <Menu.Item as={NavLink} name='portfolio' to='/portfolio' active={activeItem === 'portfolio'} onClick={this.handleItemClick} />
+                            <Menu.Item as={NavLink} name='FAQ' to='/FAQ' active={activeItem === 'FAQ'} onClick={this.handleItemClick} />
+                            <Menu.Item as={NavLink} name='services' to='/services' active={activeItem === 'services'} onClick={this.handleItemClick} />
+                            <Menu.Item as={NavLink} name='contact' to='/contact-us' active={activeItem === 'contact'} onClick={this.handleItemClick} />
+                            <Menu.Item as={NavLink} name='careers' to='/careers' active={activeItem === 'careers'} onClick={this.handleItemClick} />
                         </Menu.Menu>
                     </Menu>
                 </Segment>
